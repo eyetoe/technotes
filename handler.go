@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 	//"math/rand"
-	"time"
+	//"time"
 )
 
 // rand.Seed(time.Now().Unix())
@@ -19,10 +19,11 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>")
 	fmt.Fprintln(w, "<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,700italic' rel='stylesheet' type='text/css'>")
 	fmt.Fprintln(w, "<link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>")
-	fmt.Fprintln(w, time.Now().Unix())
 
 	fmt.Fprintln(w, "</head>")
 	fmt.Fprintln(w, "<body>")
+	fmt.Fprintln(w, "<img src='http://xonk.org:8420/xy.png' alt='xonk.org' style='width:192px;'>")
+	//fmt.Fprintln(w, time.Now().Unix())
 
 	// hoizontal rule
 	fmt.Fprintln(w, "<hr>")
