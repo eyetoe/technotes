@@ -18,6 +18,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>")
 	fmt.Fprintln(w, "<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>")
 	fmt.Fprintln(w, "<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,700italic' rel='stylesheet' type='text/css'>")
+	fmt.Fprintln(w, "<link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>")
 	fmt.Fprintln(w, time.Now().Unix())
 
 	fmt.Fprintln(w, "</head>")
